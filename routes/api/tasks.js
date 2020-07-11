@@ -1,13 +1,14 @@
 const errors = require('restify-errors');
-const Task = require('../models/Task');
+const Task = require('../../models/Task');
 
 module.exports = server => {
 
 
 
 
-
-    // Get All Tasks
+    // @route GET api/tasks
+    // @desc Get all tasks
+    // @access Private
     server.get('/tasks', async (req, res, next) => {
         try {
             const tasks = await Task.find({});
@@ -21,7 +22,9 @@ module.exports = server => {
 
 
 
-    // Add a Task
+    // @route POST api/tasks
+    // @desc Post a task
+    // @access Private
     server.post('/tasks', async (req, res, next) => {
         // Check for JSON
         if (!req.is('application/json')) {
@@ -45,7 +48,9 @@ module.exports = server => {
 
 
 
-    // Update a Task
+    // @route UPDATE api/tasks/:id
+    // @desc Update a task
+    // @access Private
     server.put('/tasks/:id', async (req, res, next) => {
         // Check for JSON
         if (!req.is('application/json')) {
@@ -64,7 +69,11 @@ module.exports = server => {
 
 
 
-    // Delete a Task
+
+    
+    // @route DELETE api/tasks/:id
+    // @desc Delete a task
+    // @access Private
     server.del('/tasks:id', async (req, res, next) => {
         try {
             const task = await Task.findOneAndRemove({
