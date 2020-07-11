@@ -1,6 +1,6 @@
 {
   "name": "vg-todo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "My very own ToDo app",
   "main": "index.js",
   "scripts": {

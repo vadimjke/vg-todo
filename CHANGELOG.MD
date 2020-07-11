@@ -3,6 +3,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [0.0.5] - 11-07-2020
+### Added
+- Добавлен **Redux**
+- Добавлена ссылка на Github репозиторий в шапку
+- Добавлен reducer/itemReducer
+- Добавлены actions/itemActions.js
+- Добавлены actions/types.js
+- Добавлен store.js для Redux
+
+### Changed
+- Компонент TasksList теперь берет данные не из state, а из itemReducer
+
+### Removed
+- Отключена модель ветвления Gitflow
+
 ## [0.0.4] - 11-07-2020
 ### Added
 - Подключена модель ветвления Gitflow
