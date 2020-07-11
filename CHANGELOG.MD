@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [0.0.4] - 11-07-2020
+### Added
+- Подключена модель ветвления Gitflow
+
 ## [0.0.3.1] - 11-07-2020
 ### Added
 - Добавлено логгирование запросов в консоль для **ENV=development**
